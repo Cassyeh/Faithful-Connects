@@ -1,22 +1,24 @@
 .chatList {
     flex: 1;
-    overflow: auto;
-    background-color: white;
+    overflow: scroll;
+    background-color: rgb(255, 255, 255, 0.87);
     margin-right: 2vw;
     margin-left: 0.5vw;
     /* overflow: hidden; */
     /* scrollbar-width: none; */
     /* overflow: overlay; */
     overflow-x: hidden;
-    margin-bottom: 0.6vh;
+    margin-bottom: 0.6vw;
     border-bottom-left-radius: 12px;
+    /* width: 25vw; */
 
     .search {
         display: flex;
         align-items: center;
-        gap: 1.35vw;
+        gap: 1vw;
         padding: 1.2vw;
-        padding-left: 1.85vw;
+        /* padding-left: 1.85vw; */
+        /* margin-left: 1.85vw; */
         border-bottom: 1px solid #FFC8A9;
 
         .searchBar {
@@ -28,25 +30,33 @@
             border-radius: 8px;
             padding: 2px;
             padding-left: 4px;
+            width: 18vw;
         }
             
      }
      .items {
         display: flex;
         align-items: center;
-        gap: 1.35vw;
-        padding: 1.2vw;
+        gap: 1vw;
+        padding: 1vw;
         cursor: pointer;
-        /* border-bottom: 2px solid #A981BB; */
+        border-bottom: 1px solid rgba(136,136,136,0.4);
+
+        .texts {
+            display: flex;
+            flex-direction: column;
+            gap: 0.35vw;
+        }
     }
+    
 }
 .chatList .search .searchBar input {
     background-color: transparent;
     color: white;
-    height: 2.5vw;
+    /* height: 2.5vw; */
     border: none;
     outline: none;
-    display: flex;
+    flex: 1;
 }
 
 .chatList .search .searchBar img {
@@ -100,6 +110,15 @@
     object-fit: cover;
 }
 
+.chatList .items .texts span {
+    font-weight: 800;
+}
+  
+.chatList .items .texts p {
+    font-size: 0.9rem;
+    font-weight: 300;
+    /* margin-top: 0.35vw; */
+}
 /* .chatList {
     flex: 1;
     overflow: scroll;

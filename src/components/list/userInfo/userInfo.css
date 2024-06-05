@@ -8,14 +8,20 @@
     margin-top: 0.5vw;
     margin-left: 0.5vw;
     margin-right: 2vw;
-    background-color: white;
+    background-color: rgb(255, 255, 255, 0.87);
     /* width: 25vw; */
-}
 
-.userInfo .user {
+    .user {
         display: flex;
         align-items: center;
         gap: 0.5vw;
+    }
+
+    .icons {
+        display: flex;
+        /* margin-left: 1vw; */
+        gap: 1vw;
+    }
 }
 
 .userInfo .user img {
@@ -25,11 +31,7 @@
     object-fit: cover;
     cursor: pointer;
 }
-.userInfo .icons {
-    display: flex;
-    /* margin-left: 1vw; */
-    gap: 1vw;
-}
+
 .userInfo .icons img {
     width: 2.4vw;
     height: 2.4vw;
