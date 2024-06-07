@@ -1,24 +1,29 @@
 import React from 'react';
 // import { useNavigate } from 'react-router-dom';
 import './detail.css'
-import { auth, db } from "../../lib/firebase";
+import { auth } from "../../lib/firebase";
+// import { arrayRemove, arrayUnion, doc, updateDoc } from "firebase/firestore";
+import { useChatStore } from "../../lib/chatStore";
+import { useUserStore } from "../../lib/userStore";
 
 const Detail = () => {
-
+  const { user, resetChat } = useChatStore();
+  // const { currentUser } = useUserStore();
   // const navigate = useNavigate();
 
   const handleLogout = () => {
     auth.signOut();
+    resetChat();
   };
 
   return (
     <div className='detail'>
       <div className="user">
-        <img src="./user.png" alt="" />
-        <h2>Jane Doe</h2>
+        <img src={user?.avatar ||"./user.png"} alt="" />
+        <h2>{user?.username}</h2>
         <p>
-          Lorem ipsum dolor sit amet!
-          </p>
+          St Raphael Catholic Church Friend
+        </p>
       </div>
       <div className="info">
         <div className="option">

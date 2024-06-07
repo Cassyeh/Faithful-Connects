@@ -99,10 +99,10 @@ const Chat = () => {
     <div className='chat'>
       <div className="top">
         <div className="user">
-          <img src="./user.png" alt="" />
+          <img src={user?.avatar ||"./user.png"} alt="" />
           <div className="texts">
-            <span>Jane Doe</span>
-            <p>Lorem ipsum dolor, sit amet.</p>
+            <span>{user?.username}</span>
+            <p>St Raphael Catholic Church Friend</p>
           </div>
         </div>
         <div className="icons">

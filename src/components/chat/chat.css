@@ -128,7 +128,7 @@
 .chat .top .user .texts p {
     font-size: 0.9rem;
     font-weight: 300;
-    color: grey;
+    color: rgb(103, 102, 102);
 }
 
 .chat .top .icons img {
