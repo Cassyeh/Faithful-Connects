@@ -1,0 +1,88 @@
+.userInfo {
+    padding: 1.2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top-left-radius: 10px;
+    border-bottom: 1px solid #A981Bb;
+    margin-top: 0.5vw;
+    margin-left: 0.5vw;
+    margin-right: 2vw;
+    background-color: rgb(255, 255, 255, 0.87);
+    /* width: 25vw; */
+
+    .user {
+        display: flex;
+        align-items: center;
+        gap: 0.5vw;
+    }
+
+    .icons {
+        display: flex;
+        /* margin-left: 1vw; */
+        gap: 1vw;
+    }
+}
+
+.userInfo .user img {
+    width: 4.8vw;
+    height: 4.8vw;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.userInfo .icons img {
+    width: 2.4vw;
+    height: 2.4vw;
+    cursor: pointer;
+}
+
+/* .userInfo .user {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+        .userInfo .user img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            cursor: pointer;
+        }  */
+/* .userInfo {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top-left-radius: 16px;
+    background-color: red;
+    margin-top: 0.6vh;
+    margin-left: 0.5vw;
+    margin-right: 2vw;
+}
+  
+.userInfo .user {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+  
+.userInfo .user img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+  
+.userInfo .icons {
+    display: flex;
+    gap: 20px;
+}
+  
+.userInfo .icons img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer; /* to be able to click on icons*/

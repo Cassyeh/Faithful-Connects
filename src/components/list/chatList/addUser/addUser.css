@@ -1,3 +1,77 @@
+.addUser{
+    width: max-content;
+    height: max-content;
+    padding: 1.5vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    background-color: rgba(17, 25, 40, 0.7);
+    border-radius: 0.63rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 10%;
+}
+
+.addUser form{
+    display: flex;
+    gap: 1.2vw;
+  }
+
+  .addUser form input{
+    padding: 1.2vw;
+    border-radius: 0.63rem;
+    border: none;
+    outline: none;
+  }
+
+  .addUser form button{
+    padding: 1.1vw;
+    border-radius: 0.63rem;
+    background-color: #8d92f1;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  .addUser form button:hover {
+    background-color: rgb(102, 71, 214);
+  }
+
+  .addUser .user{
+    margin-top: 1.6vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .addUser .user .detail{
+    display: flex;
+    align-items: center;
+    gap: 1.2vw;
+    margin-left: 0.2vw;
+  }
+
+  .addUser .user .detail img{
+    width: 3.5vw;
+    height: 3.5vw;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .addUser .user button{
+    padding: 0.8vw;
+    border-radius: 0.63rem;
+    background-color: #8d92f1;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  .addUser .user button:hover {
+    background-color: #54db9e;
+  }
 /* .addUser{
     width: max-content;
     height: max-content;

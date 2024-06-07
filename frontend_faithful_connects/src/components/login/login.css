@@ -1,0 +1,186 @@
+.login {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: Quicksand, sans-serif;
+    font-size: 62.5%;
+  }
+  
+  .form-wrapper {
+    width: 100%;
+    height: 100%;
+    background-image: url("./Christian_community.png");
+    background-size: cover; /* Ensure the image covers the entire element */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center center;
+    border-radius: 0.75rem;
+    box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .banner {
+    position: absolute;
+    top: 25%;
+    /* left: 1.75rem; no left*/
+    left: -24.25rem;
+    text-align: center;
+    color: #fff;
+    width: 40%;
+    z-index: 100;
+    transition: left 0.8s;
+  }
+  
+  .login.change .banner {
+    left: 0;
+  }
+
+  .banner h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .banner p {
+    font-size: 1rem;
+  }
+  
+  .blue-bg {
+    /* width: 40%; */
+    width: 99.99%;
+    height: 99.9%;
+    background: linear-gradient(to right, #a399cd, #bf8df4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    /* border-radius: 0.75rem; */
+    transition: width 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+
+  .login.change .blue-bg {
+    width: 40%;
+  }
+  
+  .blue-bg button {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%); /* to center button in the middle of div horizontally */
+    width: 12rem;
+    height: 2.75rem;
+    background-color: transparent;
+    border: 0.075rem solid #fff;
+    border-radius: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12rem;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .blue-bg button:hover {
+    border: 0.15rem solid #b98366;
+  }
+  
+  .signup-form {
+    width: 37.5rem;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    /* left: 40%; */
+    left:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 3.1rem 0;
+    transition: left 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+
+  .login.change .signup-form {
+    left: 40%;
+  }
+
+  .signup-form h1 {
+    font-size: 2rem;
+    color: #c88b6b;
+  }
+
+  .social-media {
+    display: flex;
+  }
+  
+  .social-media i {
+    width: 2.25rem;
+    height: 2.25rem;
+    border: 0.12rem solid #777;
+    border-radius: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1.75rem;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .signup-form p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+  }
+
+  .input-group {
+    position: relative;
+  }
+  
+  .input-group input {
+    width: 17rem;
+    height: 2.75rem;
+    padding: 0.6rem 0.6rem 0.6rem 1.75rem;
+    background-color: #ddd;
+    border: none;
+    border-radius: 0.3rem;
+  }
+
+  .input-group i {
+    position: absolute;
+    top: 55%;
+    left: 0.5rem;
+    transform: translateY(-55%);
+    font-size: 0.75rem;
+    color: #555;
+  }
+
+  .signup-form button {
+    width: 12rem;
+    height: 2.55rem;
+    /* height: 4rem; */
+    background-color: #d2a085;
+    border: none;
+    border-radius: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12rem;
+    color: #fff;
+    margin-top: 0.5rem;
+    cursor: pointer;
+  }
+
+  .signup-form button:hover {
+    background-color: #5557cd;
+  }
+  
+  
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10rem 0;
+    transition: left 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+  } */
+  
